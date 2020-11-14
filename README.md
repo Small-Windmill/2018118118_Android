@@ -1,41 +1,16 @@
+# 作业汇总
+
+|                   作业目录                   |                           作业链接                           |
+| :------------------------------------------: | :----------------------------------------------------------: |
+|               1.HelloWorld程序               | [作业1 HelloWorld](https://github.com/Small-Windmill/2018118118_Android/tree/master/HelloWorld) |
+|     2.活动的生命周期及几个回调函数的使用     | [作业2](https://github.com/Small-Windmill/2018118118_Android/tree/master/ActivityTestOne)     [作业2报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/ActivityTestOne/Report.md) |
+|    3.多活动的相互调用和活动的四种启动模式    | [作业3](https://github.com/Small-Windmill/2018118118_Android/tree/master/ActivityTestTwo)      [作业3报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/ActivityTestTwo/Report.md) |
+|                 4.Intent应用                 | [作业4](https://github.com/Small-Windmill/2018118118_Android/tree/master/IntentTest)      [作业4报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/IntentTest/Report.md) |
+| 5.基本UI控件和布局以及它们的事件回调函数应用 | [作业5](https://github.com/Small-Windmill/2018118118_Android/tree/master/UITest)      [作业5报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/UITest/Report.md) |
+|    6.recyclerView在表格型数据处理中的应用    | [作业6](https://github.com/Small-Windmill/2018118118_Android/tree/master/RecyclerViewTest)      [作业6报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/RecyclerViewTest/Report.md) |
+|          7.广播，自定义广播的使用。          | [作业7](https://github.com/Small-Windmill/2018118118_Android/tree/master/BroadcastTest)      [作业7报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/BroadcastTest/Report.md) |
 
 
-### 作业目录：
 
-------
 
-#### 第1次作业：探究活动的生命周期(以按钮为例)
 
-------
-
-#### 作业项目地址：[实验一](https://github.com/Small-Windmill/2018118118_Android/tree/master/%E5%AE%9E%E9%AA%8C%E4%B8%80)
-
-#### 作业报告地址：[实验一报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/%E5%AE%9E%E9%AA%8C%E4%B8%80%E6%8A%A5%E5%91%8A.md)
-
-------
-
-#### 第2次作业：探究活动的4种启动模式(以按钮为例)
-
-------
-
-#### 作业项目地址：[实验二](https://github.com/Small-Windmill/2018118118_Android/tree/master/%E5%AE%9E%E9%AA%8C%E4%BA%8C)
-
-#### 作业报告地址：[实验二报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/%E5%AE%9E%E9%AA%8C%E4%BA%8C/%E5%AE%9E%E9%AA%8C%E4%BA%8C%E6%8A%A5%E5%91%8A.md)
-
-------
-
-#### 第3次作业：设计简单UI界面
-
-------
-
-#### 作业项目地址:[实验三](https://github.com/Small-Windmill/2018118118_Android/tree/master/实验三)
-
-#### 作业报告地址:[实验三报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%89/%E5%AE%9E%E9%AA%8C%E4%B8%89%E6%8A%A5%E5%91%8A.md)
-
-------
-
-#### 第4次作业：使用RecyclerView
-
-#### 作业项目地址:[实验四](https://github.com/Small-Windmill/2018118118_Android/tree/master/%E5%AE%9E%E9%AA%8C%E5%9B%9B)
-
-#### 作业报告地址:[实验四报告](https://github.com/Small-Windmill/2018118118_Android/blob/master/%E5%AE%9E%E9%AA%8C%E5%9B%9B/%E5%AE%9E%E9%AA%8C%E5%9B%9B%E6%8A%A5%E5%91%8A.md)
