@@ -12,51 +12,51 @@
 
 ## 实验内容
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/1.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/1.png)
 
 由AndroidMainfest.xml可知，Hello1按钮所处界面是主界面
 
 运行程序后，Hello1的生存期如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/2.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/2.png)
 
 Hello1的运行界面结果：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/3.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/3.png)
 
 点击Hello2，Hello1和Hello2的生存期如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/4.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/4.png)
 
 可以看到，Hello1的onPause()方法得到了执行，之后 Hello2活动运行完全遮挡住Hello1活动，此时Hello1进入了停止状态。
 
 Hello2的运行界面结果：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/5.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/5.png)
 
 点击Hello3，Hello2和Hello3的生存期如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/6.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/6.png)
 
 可以看到，Hello2的onPause()方法得到了执行，之后 Hello3活动运行完全遮挡住Hello2活动，此时Hello2进入了停止状态。
 
 Hello3的运行界面结果：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/7.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/7.png)
 
 此时若是按Home键，日志结果如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/8.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/8.png)
 
 再次进入应用后，日志结果如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/9.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/9.png)
 
 此时，可以看到，Hello3活动并未调用onCreate函数，即还是原来的实例.
 
 再次点击Hello1按钮,Hello1、Hello2和Hello3的生存期如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/10.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/10.png)
 
 可以看到Hello2和Hello3依次执行onDestroy()方法，最终被销毁。Hello1活动并未调用onCreate()，即还是原来的实例,Hello1使用onStart()由不可见变为可见的状态。
 
@@ -64,7 +64,7 @@ Hello3的运行界面结果：
 
 最后在Hello1界面按下Back键退出程序，Hello1的生存期如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/%E4%BD%9C%E4%B8%9A2%E6%88%AA%E5%9B%BE/11.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestOne/Image/11.png)
 
 ------
 
