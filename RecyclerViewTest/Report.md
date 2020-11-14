@@ -14,23 +14,23 @@
 
 首先对fruit_item布局进行修改实现瀑布流布局，实现效果如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/实验四/实验四截图/one.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/RecyclerViewTest/Image/one.png)
 
 由于水果名字的长度每次都是随机生成的，所以每次运行的效果都不一样。
 
 点击图中苹果图片，会显示点击信息:
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/实验四/实验四截图/two.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/RecyclerViewTest/Image/two.png)
 
 然后再点击苹果的文字部分，可以修改水果的名字：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/实验四/实验四截图/three.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/RecyclerViewTest/Image/three.png)
 
 再点击图中苹果图片，会显示点击修改成功后的信息：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/实验四/实验四截图/four.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/RecyclerViewTest/Image/four.png)
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/实验四/实验四截图/five.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/RecyclerViewTest/Image/five.png)
 
 ## 实验总结
 
