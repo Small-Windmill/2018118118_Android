@@ -14,81 +14,81 @@
 
 ##### 1.singleTask模式
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/1.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/1.png)
 
 Hello1的启动模式是singleTask,且hello1是活动的主界面，运行程序，Hello1创建了一个实例:
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/2.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/2.png)
 
 再点击Hello1按钮，日志结果如下:
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/3.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/3.png)
 
 可以看到Hello1先是执行onPause()后又执行onResume()和onPostResume()使自己返回栈的栈顶，并且处于运行状态。可见Hello1活动并未调用onCreate函数，即还是原来的实例。当活动的启动模式指定为singleTask，每次启动该活动时系统首先会在返回栈中检查是否存在该活动的实例，如果发现已经存在则直接使用该实例，并把在这个活动之上的所有活动统统出栈，如果没有发现就会创建一个新的活动实例。
 
 ##### 2.standard模式
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/4.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/4.png)
 
 Hello2的启动模式是standard,点击一次Hello2,日志结果如下:
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/5.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/5.png)
 
 可以看到Hello1进入暂停状态，Hello2执行onCreate()创建了一个实例
 
 再点击一次Hello2，日志结果如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/6.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/6.png)
 
 可以看到Hello2执行onPause()后又执行onCreate()创建了一个实例，然后再执行onStart(), onResume(), onPostResume()来显示自己的界面。
 
 此时界面如下:
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/7.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/7.png)
 
 点击back键，日志结果如下：
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/8.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/8.png)
 
 可以看到Hello2执行onPause()后又执行onStart(), onResume(), onPostResume()来显示自己的界面，最后又执行onStop()和onDestroy()销毁实例。此时界面如下:
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/9.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/9.png)
 
 再点击back键，日志结果如下:
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/10.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/10.png)
 
 可以看到Hello2执行onPause()后，Hello1开始活动，Hello2活动执行onStop()和onDestroy()后被销毁。此时界面如下：
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/11.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/11.png)
 
 由此可以得出活动的启动模式为standard时，系统不会在乎这个活动是否已经在返回栈中存在，每次启动都会创建该活动的一个新的实例。
 
 #####  3.singleTop模式
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/12.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/12.png)
 
 Hello3的启动模式是singleTop.点击Hello3，日志结果如下:
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/13.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/13.png)
 
 可以看到Hello1进入暂停状态，Hello3执行onCreate()创建实例，后又执行onStart(), onResume(), onPostResume()来显示自己的界面。
 
 点击一次Hello3,日志结果如下:
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/14.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/14.png)
 
 可以看到Hello3先是执行onPause()后又执行onResume()和onPostResume()使自己返回栈的栈顶，并且处于运行状态。可见Hello3活动并未调用onCreate函数，即还是原来的实例。
 
 点击Hello2，日志结果如下:
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/15.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/15.png)
 
 Hello3进入了停止状态，Hello2执行onCreate()创建实例后又执行onStart(), onResume(), onPostResume()来显示自己的界面。
 
 点击返回键，日志结果如下:
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/%E4%BD%9C%E4%B8%9A3%E6%88%AA%E5%9B%BE/16.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/16.png)
 
 Hello2执行onPause()后，Hello3执行onStart()将活动由不可见变为可见，Hello2活动执行onStop()和onDestroy()后被销毁
 
@@ -98,13 +98,13 @@ Hello2执行onPause()后，Hello3执行onStart()将活动由不可见变为可�
 
 将Hello2的启动模式改为singleInstance,同时修改每个活动中onCreate()方法的代码,打印当前返回栈的id:
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/实验二/实验二过程图片/17.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/17.png)
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/实验二/实验二过程图片/18.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/18.png)
 
 重新运行程序，在Hello1界面点击按钮进入到Hello2，然后在Hello2界面点击按钮进入到Hello3,查看logcat中的打印信息
 
-![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/实验二/实验二过程图片/19.png)
+![img](https://github.com/Small-Windmill/2018118118_Android/raw/master/ActivityTestTwo/Image/19.png)
 
 然后按下Back键进行返回，Hello3直接返回到Hello1,再按下Back键又会返回到Hello2,再按下Back键才会退出程序。
 
