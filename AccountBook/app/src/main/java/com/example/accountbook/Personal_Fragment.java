@@ -15,40 +15,42 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class Personal_Fragment extends Fragment {
-    String username = null;
-    TextView tv_username = null;
-    Button btn_img = null;
-    TextView tv_psw = null;
-    TextView tv_exit = null;
-    ImageView img = null;
+    String username=null;
+    TextView tv_username=null;
+    Button btn_img=null;
+    TextView tv_psw=null;
+    TextView tv_exit=null;
+    ImageView img=null;
     UserOperator muserOperator;
-    View view = null;
-    Bundle bundle = null;
+    View view=null;
+    Bundle bundle=null;
+    static int image = R.drawable.one;
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState){
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bundle = getArguments();
-        username = bundle.getString("username");
+        bundle=getArguments();
+        username=bundle.getString("username");
     }
+
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,@Nullable Bundle savedInstanceState){
-        view = inflater.inflate(R.layout.personal_fragment,null);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        view=inflater.inflate(R.layout.personal_fragment,null);
         tv_username=(TextView)view.findViewById(R.id.tv_username);
         tv_username.setText(username);
-        img = (ImageView)view.findViewById(R.id.img);
-        btn_img = (Button)view.findViewById(R.id.btn_img);
-        tv_psw = (TextView)view.findViewById(R.id.tv_updatepsw);
-        tv_exit = (TextView)view.findViewById(R.id.tv_exit);
-        muserOperator = new UserOperator(view.getContext());
-        img.setImageResource(R.drawable.head_pic);
+        img=(ImageView)view.findViewById(R.id.img);
+        btn_img=(Button)view.findViewById(R.id.btn_img);
+        tv_psw=(TextView)view.findViewById(R.id.tv_updatepsw);
+        tv_exit=(TextView)view.findViewById(R.id.tv_exit);
+        muserOperator=new UserOperator(view.getContext());
+        img.setImageResource(image);
         btn_img.setOnClickListener(l);
         tv_psw.setOnClickListener(l);
         tv_exit.setOnClickListener(l);
         return view;
     }
-    View.OnClickListener l=new View.OnClickListener(){
 
+    View.OnClickListener l=new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()){
@@ -67,12 +69,15 @@ public class Personal_Fragment extends Fragment {
             }
         }
     };
+
+
+
     @Override
-    public void onActivityResult(int requestCode,int resultCode,Intent data){
-        super.onActivityResult(requestCode,resultCode,data);
-        if (requestCode==0x11&&resultCode==0x11){
-            Bundle bundle = data.getExtras();
-            int image = bundle.getInt("imageId");
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==0x11&&resultCode==0x11){
+            Bundle bundle=data.getExtras();
+            image=bundle.getInt("imageId");
             img.setImageResource(image);
         }
     }

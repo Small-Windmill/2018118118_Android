@@ -17,7 +17,7 @@ public class HeadActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activyty_head);
+        setContentView(R.layout.activity_head);
         GridView gridView = (GridView)findViewById(R.id.gridView);
         BaseAdapter baseAdapter = new BaseAdapter() {
             @Override
