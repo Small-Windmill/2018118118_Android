@@ -8,11 +8,11 @@
 
 点击右上角的注册，注册一个新账户：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/AccountBook/Image/2.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/AccountBook/Image/2.jpg)
 
 用新账户登录主界面，主界面显示如下：
 
-![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/AccountBook/Image/3.png)
+![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/AccountBook/Image/3.jpg)
 
 使用记账功能，点击“支出”和“收入”按钮添加多条记账记录:
 
