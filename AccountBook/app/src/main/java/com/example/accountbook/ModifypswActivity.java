@@ -40,8 +40,10 @@ public class ModifypswActivity extends AppCompatActivity {
                         if(bean.password.equals(password)){
                             bean.setPassword(npassword1);
                             muserOperator.updateUser(bean);
-                            Toast.makeText(ModifypswActivity.this,"修改成功",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ModifypswActivity.this,"密码修改成功,需要重新登录",Toast.LENGTH_SHORT).show();
                             finish();
+                            Intent intent1 = new Intent(ModifypswActivity.this,loginActivity.class);
+                            startActivity(intent1);
                         }else{
                             Toast.makeText(ModifypswActivity.this,"原密码不正确",Toast.LENGTH_SHORT).show();
                         }

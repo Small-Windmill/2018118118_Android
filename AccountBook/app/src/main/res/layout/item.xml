@@ -10,7 +10,7 @@
         android:layout_alignParentLeft="true"
         android:gravity="center"
         android:singleLine="true"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:text="costTitle"
         android:ellipsize="marquee" />
 
@@ -20,7 +20,7 @@
         android:layout_height="80dp"
         android:layout_toRightOf="@+id/tv_content"
         android:layout_marginLeft="15dp"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:gravity="center"
         android:text="costDate"/>
 
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:text="30"
-        android:textSize="25sp"
+        android:textSize="18sp"
         android:layout_marginRight="20dp"
         android:layout_alignParentRight="true"
         android:gravity="center"/>
