@@ -91,16 +91,4 @@
         android:gravity="center"
         android:onClick="onClick" />
 
-    <TextView
-        android:id="@+id/tv_loginactivity_forget"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/bt_loginactivity_login"
-        android:layout_alignLeft="@+id/bt_loginactivity_login"
-        android:layout_marginVertical="50dp"
-        android:layout_marginLeft="173dp"
-        android:layout_marginTop="10dp"
-        android:text="忘记密码"
-        android:textColor="#f00" />
-
 </RelativeLayout>
