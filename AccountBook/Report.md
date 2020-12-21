@@ -1,8 +1,16 @@
-##### 记账本APP
+### 一、实验目的
 
 ------
 
-启动APP，首先是登录界面：
+结合所学Android的各部分内容和知识实战开发一个安卓APP
+
+------
+
+### 二、实验过程
+
+------
+
+启动记账本APP，首先是登录界面：
 
 ![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/AccountBook/Image/1.png)
 
@@ -45,3 +53,12 @@
 ![Image](https://github.com/Small-Windmill/2018118118_Android/raw/master/AccountBook/Image/12.png)
 
 最后就是退出登录功能，程序返回到最开始的登录界面。
+
+------
+
+### 三、实验总结：
+
+本次实验我开发了一个简易记账本APP,利用到的主要技术有Sqlite数据库的增删查改FrameLayout布局实现页面切换的效果和第三方库MPChart的饼状图统计。
+
+通过上述实验，增加了我在安卓项目开发中的经验。
+
